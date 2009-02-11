@@ -1,0 +1,5 @@
+= so-536261: polymorphic bi-directional self-referential
+
+This is an attempt at answering the StackOverflow question:
+
+http://stackoverflow.com/questions/536261/tricky-active-record-relationships-polymorphic-bi-directional-self-referential
