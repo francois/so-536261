@@ -1,3 +1,3 @@
 class Publication < ActiveRecord::Base
-  has_many :references, :as => :referrer
+  has_many :citations, :as => :referrer
 end

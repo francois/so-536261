@@ -11,14 +11,7 @@
 
 ActiveRecord::Schema.define(:version => 20090211145645) do
 
-  create_table "publications", :force => true do |t|
-    t.string   "type"
-    t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "references", :force => true do |t|
+  create_table "citations", :force => true do |t|
     t.integer  "referrer_id"
     t.string   "referrer_type"
     t.integer  "referral_id"
@@ -27,7 +20,14 @@ ActiveRecord::Schema.define(:version => 20090211145645) do
     t.datetime "updated_at"
   end
 
-  add_index "references", ["referral_id", "referral_type"], :name => "index_references_on_referral_id_and_referral_type"
-  add_index "references", ["referrer_id", "referrer_type"], :name => "index_references_on_referrer_id_and_referrer_type"
+  add_index "citations", ["referral_id", "referral_type"], :name => "index_citations_on_referral_id_and_referral_type"
+  add_index "citations", ["referrer_id", "referrer_type"], :name => "index_citations_on_referrer_id_and_referrer_type"
+
+  create_table "publications", :force => true do |t|
+    t.string   "type"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
