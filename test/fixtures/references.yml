@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  referer_id: 1
-  referer_type: MyString
-  referal_id: 1
-  referal_type: MyString
+  referrer_id: 1
+  referrer_type: MyString
+  referral_id: 1
+  referral_type: MyString
 
 two:
-  referer_id: 1
-  referer_type: MyString
-  referal_id: 1
-  referal_type: MyString
+  referrer_id: 1
+  referrer_type: MyString
+  referral_id: 1
+  referral_type: MyString

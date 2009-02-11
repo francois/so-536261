@@ -19,15 +19,15 @@ ActiveRecord::Schema.define(:version => 20090211145645) do
   end
 
   create_table "references", :force => true do |t|
-    t.integer  "referer_id"
-    t.string   "referer_type"
-    t.integer  "referal_id"
-    t.string   "referal_type"
+    t.integer  "referrer_id"
+    t.string   "referrer_type"
+    t.integer  "referral_id"
+    t.string   "referral_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "references", ["referal_id", "referal_type"], :name => "index_references_on_referal_id_and_referal_type"
-  add_index "references", ["referer_id", "referer_type"], :name => "index_references_on_referer_id_and_referer_type"
+  add_index "references", ["referral_id", "referral_type"], :name => "index_references_on_referral_id_and_referral_type"
+  add_index "references", ["referrer_id", "referrer_type"], :name => "index_references_on_referrer_id_and_referrer_type"
 
 end
